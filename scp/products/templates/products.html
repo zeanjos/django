@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
-
 <html>
     <head>
         <title>Produtos</title>
     </head>
     <body>
-        <h1>Hello world Template</h1>
-
+        {% for product in products %}
+            {{ product.title }} - R$ {{ product.price }} <br>
+        {% endfor %}
     </body>
-
 </html>
